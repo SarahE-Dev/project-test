@@ -4,10 +4,6 @@ import React, { Component } from 'react'
 export class Square extends Component {
     constructor(props){
         super(props)
-        console.log(props.name);
-        this.state = {
-          url1: null
-        }
         
     }
   getColor=(name)=>{
@@ -24,7 +20,7 @@ export class Square extends Component {
   }
   render() {
     return (
-      <div style={{border: '2px solid white', padding: '20px', margin: '20px', height: '8vw', width: '10vw', backgroundImage: `url("${this.getColor(this.props.name)}")`, backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', textShadow: '2px 1px 1px blueviolet', fontSize: '2rem'}}>{this.props.name}</div>
+      <div style={{border: '2px solid white', padding: '20px', margin: '20px', height: '8vw', width: '10vw', backgroundImage: `url("${this.getColor(this.props.name)}")`, backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', textShadow: '2px 1px 1px blueviolet', fontSize: '3vw'}}>{this.props.name}</div>
     )
   }
 }

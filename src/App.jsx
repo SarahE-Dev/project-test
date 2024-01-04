@@ -12,7 +12,7 @@ export class App extends Component {
         <Header/>
         <Body/>
         <Sidebar/>
-        <Footer/>
+        <Footer name={'Sarah Eatherly'}/>
         
       </div>
     )
